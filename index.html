@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Visual Studio 2019 序列号</h1>
+    Visual Studio 2019 Enterprise<br>
+    BF8Y8-GN2QH-T84XB-QVY3B-RC4DF<br>
+    <br>
+    Visual Studio 2019 Professional<br>
+    NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y<br>
+    
+    <h1>VNC序列号</h1>
+    <br> VKUPN-MTHHC-UDHGS-UWD76-6N36A
+    <br> 77NVU-D9G5T-79ESS-V9Y6X-JMVGA
+    <br> URF4A-YZRVW-PEDAE-BLNK3-Y5DMA
+    <br> 5D7L8-ZQXSA-2L5D4-4UFB4-PWDLA
+    <br> 8KNFU-MZZHE-WA449-2SLLH-48Q7A
+    <br>
+    <a href="./VNC-Server-6.7.4-Windows.exe">VNC-Server-6.7.4-Windows.exe</a><br>
+    <br><br>
+
+    <!--<a href="http://192.168.1.114/cn_windows_server_2019_x64_dvd_4de40f33.iso">cn_windows_server_2019_x64_dvd_4de40f33.iso-Windows Server 2019</a><br>-->
+
+    <h1>Ubuntu搭建KMS</h1>
+    https://blog.csdn.net/xingyu97/article/details/89381018<br> wget https://github.com/Wind4/vlmcsd/releases/download/svn1112/binaries.tar.gz<br> tar -zxvf binaries.tar.gz<br> cd binaries/Linux/intel/static<br> ./vlmcsdmulti-x64-musl-static vlmcsd<br>    查看vlmcsd的运行情况，可以使用如下命令：
+    <br> ps aux | grep vlmcsd<br> kill -9 上图使用ps aux命令回显的vlmcsd进程ID<br> 注意，vlmcsd需要用到1688端口，如果你的机器防火墙打开了，需要设置放行规则或者关闭
+    <br> https://gitee.com/byxlle/vlmcsd
+    <br>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <button onclick="FunFine()">Fine</button>
+    <script>
+        function FunFine() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var r = 0;
+            var g = 0;
+            var b = 0;
+            var count = 255;
+            Draw00(r, g, b, ctx, c);
+            /*while (a < count) {
+                ctx.fillStyle = "rgb(" + r.toString() + g.toString() + b.toString() + ")";
+                ctx.fillRect(0, 0, 150, 75);
+                //sleep(1000);
+
+                r = r + 1;
+                g = g + 2;
+                b = b + 3;
+                if (b > 255) {
+                    ctx.fillStyle = "#FF00FF";
+                    ctx.fillRect(0, 0, 150, 75);
+                    break;
+                }
+                a = a + 1;
+            }*/
+        }
+
+        function Draw00(r, g, b, ctx, c) {
+            ctx.fillStyle = "rgb(" + r.toString() + g.toString() + b.toString() + ")";
+            ctx.fillRect(0, 0, 150, 75);
+            r = r + 1;
+            g = g + 2;
+            b = b + 3;
+            if (b > 255) {
+                ctx.fillStyle = "#FF00FF";
+                ctx.fillRect(0, 0, 150, 75);
+
+            } else {
+                setTimeout(Draw00(r, g, b, ctx, c), 500);
+            }
+        }
+    </script>
+</body>
+
+</html>
