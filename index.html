@@ -719,6 +719,12 @@
         function ShowNotice(noticeStr) {
             divNoticeShowFullWindow.style.display = "block";
             divNoticeShow.style.display = 'block';
+            document.getElementById("divNoticeShow").innerHTML = noticeStr + "<br/><button onclick=\"IReadText()\"style=\"width: 100px;height: 50px;\">我已阅读</button>";
+        }
+	    
+	function ShowNoticeClose(noticeStr) {
+            divNoticeShowFullWindow.style.display = "block";
+            divNoticeShow.style.display = 'block';
             document.getElementById("divNoticeShow").innerHTML = noticeStr + "<br/><button onclick=\"ChangeBody(warningStr1)\"style=\"width: 100px;height: 50px;\">我已阅读</button>";
             //document.getElementById("divNoticeShow").innerHTML = noticeStr + "<br/><button onclick=\"IReadText()\"style=\"width: 100px;height: 50px;\">我已阅读</button>";
             //window.opener=null;
@@ -802,7 +808,7 @@
             divNoticeShow.style.display = 'none';
         }
 
-        //window.onload = ShowNotice(warningStr);
+        //window.onload = ShowNoticeClose(warningStr);
     </script>
 </body>
 </html>
